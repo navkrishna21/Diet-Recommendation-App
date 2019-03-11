@@ -36,3 +36,11 @@ Each food is categorised in the following categories:
 * Vegetable
 * Grains
 * Protein Snack
+
+# Demo
+
+Home Page:
+![Image](./screenshots/home_page.png)
+
+Result Page:
+![Image](./screenshots/result_page.png)
