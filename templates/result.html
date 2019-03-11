@@ -1,0 +1,33 @@
+{% extends "home.html" %}
+{% block main %}
+    <table id="chart">
+        <tr>
+            <th>
+                <center>DIET CHART</center>
+            </th>
+        </tr>    
+        <tr>
+            <td>Breakfast: {{ breakfast }}</td>
+        </tr>
+
+   		{%if snack1 %}
+	        <tr>
+	            <td>Snack: {{ snack1 }}</td>
+	        </tr>
+        {%endif%}
+
+        <tr>
+            <td>Lunch: {{ lunch }}</td>
+        </tr>
+        <tr>
+            <td>Snack: {{ snack2 }}</td>
+        </tr>
+        <tr>
+            <td>Dinner: {{ dinner }}</td>
+        </tr>
+        <tr>
+            <td>Snack: {{ snack3 }}</td>
+        </tr>
+    </table>
+    <button type="button" class="btn btn-success" onClick= "location.href = '{{url_for("home") }}' " role="button">Back</button>
+{% endblock %}

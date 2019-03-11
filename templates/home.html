@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>{{title}}</title>
+		<link rel="stylesheet" type="text/css" href="{{url_for('static',filename = 'styles.css') }}">
+		<link rel="stylesheet" media="screen" href ="{{url_for('static',filename = 'bootstrap.min.css') }}">
+		<link rel="stylesheet" href="static/bootstrap-theme.min.css">
+		<meta name="viewport" content = "width=device-width, initial-scale=1.0">
+	</head>
+	<body>
+		<div class="container">
+			{% block main %}	
+				<h1><center>Welcome to your Artificially Intelligent Dietitian!</center></h2>
+				<h3><center>Get your personalised Diet Chart!</center></h3>
+				<form  action="" method="post" role="form" class="my-form">
+					{{ form.hidden_tag()}}
+					<div class="form-group">
+						{{form.name.label(class="form-control-label")}}
+						
+						{%if form.name.errors%}
+							{{form.name(class="form-control form-control-md is-invalid")}}
+							<div class="invalid-feedback">
+								{%for error in form.name.errors%}
+									<span>{{error}}</span>
+								{%endfor%}
+							</div>
+						{%else%}
+							{{form.name(class="form-control form-control-md")}}
+						{%endif%}
+					</div>
+					<div class="form-group">
+						{{form.weight.label(class="form-control-label")}}
+
+						{%if form.weight.errors%}
+							{{form.weight(class="form-control form-control-md is-invalid")}}
+							<div class="invalid-feedback">
+								{%for error in form.weight.errors%}
+									<span>{{error}}</span>
+								{%endfor%}
+							</div>
+						{%else%}
+							{{form.weight(class="form-control form-control-md")}}
+						{%endif%}
+					</div>
+					<div class="form-group">
+						{{form.height.label(class="form-control-label")}}
+
+						{%if form.height.errors%}
+							{{form.height(class="form-control form-control-md is-invalid")}}
+							<div class="invalid-feedback">
+								{%for error in form.height.errors%}
+									<span>{{error}}</span>
+								{%endfor%}
+							</div>
+						{%else%}
+							{{form.height(class="form-control form-control-md")}}
+						{%endif%}
+
+					</div>
+					<div class="form-group">
+						{{form.age.label(class="form-control-label")}}
+						
+						{%if form.age.errors%}
+							{{form.age(class="form-control form-control-md is-invalid")}}
+							<div class="invalid-feedback">
+								{%for error in form.age.errors%}
+									<span>{{error}}</span>
+								{%endfor%}
+							</div>
+						{%else%}
+							{{form.age(class="form-control form-control-md")}}
+						{%endif%}
+					</div>	
+					{% for subfield in form.gender %}
+						<div class="form-check">
+							{{ subfield(class="form-check-input") }}
+							{{ subfield.label(class="form-check-label") }}
+						</div>	
+					{% endfor %}					
+					
+					<h4 style="margin-bottom:3px">Physical Activity</h4>
+					{% for subfield in form.physical_activity %}
+						<div class="form-check">
+							{{ subfield(class="form-check-input") }}
+							{{ subfield.label(class="form-check-label") }}
+						</div>	
+					{% endfor %}
+
+					{{form.submit(class="btn btn-success")}}				
+				</form>
+			{% endblock %}
+		</div>
+	</body>
+</html>
