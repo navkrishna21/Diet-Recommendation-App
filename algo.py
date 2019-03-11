@@ -12,7 +12,7 @@ def calc_tdee(name,weight,height,age,gender,phys_act):
 	if gender=='Female':
 		bmr = 655 + (9.6 * weight) + (1.8 * height ) - (4.7 * age)
 	else:
-		bmr = 655 + (13.7 * weight) + (5 * height ) - (6.8 * age)
+		bmr = 66 + (13.7 * weight) + (5 * height ) - (6.8 * age)
 
 	if phys_act == 'value1':
 		tdee= bmr*1.2
