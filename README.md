@@ -1,12 +1,12 @@
 # Diet-Recommendation-App
 Recommends a balanced diet based on user information.
 
-#Install Requirements by:
+# Install Requirements by:
 ```
 pip install -r requirements.txt
 ```
 
-#Formula Used:
+# Formula Used:
 
 Total Daily Energy Expenditure(TDEE) of a person is calculated.
 The majority of calories burned during your day unless you are a professional athlete takes place at the Basal Metabolic Rate. The Basal Metabolic Rate which is commonly referred to as your metabolism, is the amount of energy, or calories your body burns in order to function when at rest.
