@@ -39,8 +39,9 @@ Each food is categorised in the following categories:
 
 # Demo
 
-Home Page:
+## Home Page:
 ![Image](./screenshots/home_page.png)
 
-Result Page:
+
+## Result Page:
 ![Image](./screenshots/result_page.png)
