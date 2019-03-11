@@ -8,8 +8,7 @@ pip install -r requirements.txt
 
 # Formula Used:
 
-Total Daily Energy Expenditure(TDEE) of a person is calculated.
-The majority of calories burned during your day unless you are a professional athlete takes place at the Basal Metabolic Rate. The Basal Metabolic Rate which is commonly referred to as your metabolism, is the amount of energy, or calories your body burns in order to function when at rest.
+TDEE, total daily energy expenditure, is the amount of energy in calories you burn per day. TDEE is best calculated by factoring in your BMR, or basal metabolic rate, and your activity level. BMR is the amount of calories you would burn per day at rest.
 
 The Harris-Benedict formula is based on gender, a person’s weight, height, and age:
 ```
