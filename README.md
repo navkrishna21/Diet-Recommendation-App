@@ -27,8 +27,8 @@ Extremely active = BMR x 1.9 (hard exercise 2 or more times per day)
 ```
 
 Each food is categorised in the following categories:
-*Protein
-*Fruit
-*Vegetable
-*Grains
-*Protein Snack
+* Protein
+* Fruit
+* Vegetable
+* Grains
+* Protein Snack
