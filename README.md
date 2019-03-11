@@ -38,6 +38,7 @@ Each food is categorised in the following categories:
 * Protein Snack
 
 The result is displayed as meals using balanced combination of these food depending on the TDEE of a person.
+
 [Reference](https://discovergoodnutrition.com/2013/10/personalized-diet-plan/)	
 # Demo
 
